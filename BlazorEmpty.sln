@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorEmpty", "BlazorEmpty\BlazorEmpty.csproj", "{35877FCD-230D-4C97-BACB-86F16AE3D353}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{611A708F-E6C7-411C-892B-B832B63A3CE0}"
+	ProjectSection(SolutionItems) = preProject
+		REPRODUCTION.txt = REPRODUCTION.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35877FCD-230D-4C97-BACB-86F16AE3D353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35877FCD-230D-4C97-BACB-86F16AE3D353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35877FCD-230D-4C97-BACB-86F16AE3D353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35877FCD-230D-4C97-BACB-86F16AE3D353}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F9DCA84-C384-47AC-BF42-652039D5A4CF}
+	EndGlobalSection
+EndGlobal

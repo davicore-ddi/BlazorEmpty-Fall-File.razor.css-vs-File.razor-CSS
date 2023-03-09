@@ -1,0 +1,112 @@
+﻿@page "/login"
+
+@inject IConfiguration Configuration
+
+<div class="pagecontainer">
+<div class="login-container">
+  <div class="login-box">
+    <h2>Login</h2>
+    <form method="post" @onsubmit="HandleSubmit">
+      <div class="form-group">
+        <label for="username">Benutzername</label>
+        <input type="text" id="username" name="username" placeholder="Benutzername" @bind-value="Username">
+      </div>
+      <div class="form-group">
+        <label for="password">Passwort</label>
+        <input type="password" id="password" name="password" placeholder="Passwort" @bind-value="Password">
+      </div>
+      <button type="submit">Anmelden</button>
+                <a href="/datentypenbeispiele">Zu den Datentypenbeispielen</a>
+
+    </form>
+  </div>
+</div>
+</div>
+@code {
+    private string? Username { get; set; }
+    private string? Password { get; set; }
+
+    
+        private void HandleSubmit()
+        {
+
+        }
+
+}
+
+@*
+<style>
+ *, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+.login-container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+    .login-box h2 {
+        margin-top: 0;
+    }
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+    .form-group label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: inset 0 1px 3px rgba(0,0,0,.1);
+    }
+
+button[type="submit"] {
+    background-color: #008080;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color .3s;
+}
+
+    button[type="submit"]:hover {
+        background-color: #007272;
+    }
+
+@@media screen and (max-width: 500px) {
+    .login-box {
+        width: 90%;
+    }
+}
+</style>
+*@
