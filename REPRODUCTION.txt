@@ -4,11 +4,11 @@
 	2.b) LoginForm.razor.css
 	2.c) _Host.cshtml
 
-3.) 
+3.) #GO
 3.a) Starte die Applikation. Erwartung: Es wird kein css geladen, aber die LoginForm.razor.css ist da
 3.b) Öffne die _Host.cshtml Datei und aktiviere / entferne Kommentar @*<link href="BlazorEmpty.styles.css" rel="stylesheet" />*@
 3.c) Starte die Applikation. Erwartung: Das CSS wird geladen, jedoch entsteht ein Scrollbalken auf Y-Achse
-	 Generiert durch:
+	 Generiert durch (Dev-Konsole @ CSS Reiter):
 ---------------------------
 	body {
 		display: block;
@@ -16,12 +16,13 @@
 	}
 ---------------------------
 
-4.) Aktiviere den auskommentierten CSS-Code in der File: LoginForm.razor: Zeile 37 - 110
-4.a) Starte die Applikation. Erwartung / Ergebnis: Es gibt keinen Scrollbalken, das Ding ist responsive
-4.b) Kommentiere den CSS-Code in der File: LoginForm.razor: Zeile 38 - 111 wieder aus / ein (?!)
+4.) Aktiviere den auskommentierten CSS-Code in der File: LoginForm.razor: Zeile 37 - 110 <style>
+4.a) Starte die Applikation. Erwartung / Ergebnis: Es gibt keinen Scrollbalken, das Ding ist responsive => Überlädt die LoginForm.razor.css File
+4.b) Kommentiere den CSS-Code in der File: LoginForm.razor: Zeile 38 - 111 wieder aus: LoginForm.razor.css ist wieder aktiv
 4.c) Entferne in der File LoginForm.razor.css auf Zeile 16 die height: 100vh;
-4.d) Starte die Applikation. Erwartung / Ergebnis: Das Teil ist Responsive, kein Scrollbalken?
+4.d) Starte die Applikation. Erwartung / Ergebnis: Das Teil ist Responsive, kein Scrollbalken? (Die Box ist nun oben.. joa..)
 
 Conclusion(s).. ?
 a) Es benötigt eine [PROJEKT].styles.css referenzierung 
 b) height: 100vh; wird irgendwie anders via File.razor.css und File.razor interpretiert?
+c) Der Code ist völliger Müll :D
